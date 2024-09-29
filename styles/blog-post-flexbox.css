@@ -1,0 +1,106 @@
+:root {
+    --primary-color: #333;
+    --secondary-color: #e6eef4;
+    --selection-color: #afaeac;
+    --grid-object-color: #1acece;
+}
+.flex-container-1 {
+    background-color: red;
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.flex-object {
+    background-color: var(--secondary-color);
+    width: 220px;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-object-1 {
+    background-color: violet;
+    width: 220px;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.flex-object p {
+    margin: 0;
+    font-size: 200%;
+}
+.flex-container-2a {
+    background-color: red;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.flex-container-2b {
+    background-color: red;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap-reverse;
+}
+.flex-container-3 {
+    background-color: red;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+@media (max-width: 900px){
+    .flex-object {
+        background-color: white;
+    }
+}
+.grid-container-1 {
+    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.grid-container-1b{
+    background-color: var(--grid-object-color);
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30vw, 1fr));
+    grid-gap: 4vw;
+    
+}
+.grid-object {
+    background-color: var(--grid-object-color);
+    width: 220px;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.grid-object-1{
+    background-color: lightcyan;
+    width: 220px;
+    height: 50px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.flex-object:hover{
+    background-color: black;
+    transition: background-color 5s;
+    
+}
+.grid-object p {
+    margin: 0;
+    font-size: 200%;
+}
+.grid-object-1 p {
+    margin: 0;
+    font-size: 200%;
+}
